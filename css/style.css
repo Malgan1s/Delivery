@@ -1,0 +1,360 @@
+*{
+	box-sizing: border-box;
+}
+body{
+	font-family: 'Roboto', sans-serif;
+	padding-top: 44px;
+}
+.container {
+	max-width: 1200px;
+	margin: auto;
+}
+.header {
+	display: flex;
+	align-items: center; 
+	justify-content: space-between;
+	margin-bottom: 40px;
+}
+.input {
+	background: #FFFFFF;
+	border: 1px solid #D9D9D9;
+	border-radius: 2px;
+	font-size: 16px;
+	line-height: 24px;
+	padding: 8px;
+	background-repeat: no-repeat;
+	background-position: left 10px center;
+	padding-left: 32px;
+}
+.input-address {
+	flex: 0.8;
+	background-image: url(../img/home.svg);
+}
+.input-search{
+	width: 300px;
+	background-image: url(../img/search.svg); 
+	margin-left: auto;
+}
+.buttons{
+	display: flex;
+	align-items: center;
+}
+.button{
+	    display: flex;
+	    align-items: center;
+    padding: 8px 16px;
+    background: #FFFFFF;
+    border: 1px solid #D9D9D9;
+    box-sizing: border-box;
+    box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.0015);
+    border-radius: 2px;
+    color: #595959;
+    font-size: 16px;
+    line-height: 24px;
+}
+.button-primary {
+    background: #1890FF;
+    border: 1px solid #1890FF;
+    color: #fff;
+    margin-right: 10px;
+}
+.button-icon{
+    margin-right: 6px;
+    vertical-align: middle;
+}
+.button-card-text{
+	margin-right: 10px;
+}
+.button-text {
+    vertical-align: middle;
+}
+.promo{
+	box-shadow: 0px 7px 12px rgba(158, 158, 163, 0.1);
+	background: #FFF1B8 url(../img/italia.png) no-repeat top -100px right -247px / 924px;
+	border-radius: 10px;
+	padding: 68px 70px;
+	margin-bottom: 50px;
+}
+.promo-title{
+	font-style: normal;
+	font-weight: bold;
+	font-size: 39px; 
+	line-height: 46px;
+	color: #302C34;
+	margin-bottom: 0px;
+}
+.promo-text{
+	font-style: normal;
+	font-weight: normal;
+	font-size: 24px;
+	line-height: 28px;
+	color: #302C34;
+	max-width: 538px;
+}
+.main {
+	background: linear-gradient(180deg, rgba(245, 245, 245, 0) 1.04%, #F5F5F5 100%);
+}
+.section-heading {
+	display: flex;
+    align-content: center;
+    margin-bottom: 44px;
+}
+.section-title{
+    font-style: normal;
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 42px;
+    color: #000000;
+    margin: 0;
+    margin-right: 30px;
+}
+.card{
+	background: #fff;
+	box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.05);
+	border-radius: 7px;
+	overflow: hidden;
+	margin-bottom: 30px;
+	flex-basis: 31%;
+	text-decoration: none;
+}
+.cards{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-items: flex-start;
+}
+.card-image {
+	width: 384px;
+	height: 250px;
+	object-fit: cover;
+}
+.card-text{
+	padding-top: 20px;
+	padding-bottom: 35px;
+	padding-left: 24px;
+	padding-right:  25px;
+}
+.card-heading{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.card-title{
+	margin: 0;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 24px;
+	line-height: 32px;
+}
+.card-title-reg {
+	font-weight: 400px;
+}
+.card-tag{
+	font-style: normal;
+	font-weight: : normal;
+	font-size: 12px;
+	line-height: 20px;
+	color: #FFF;
+	background: #262626;
+	border-radius: 2px;
+	padding: 1px 8px;
+}
+.card-info{
+	display: flex;
+	align-items: center;
+	flex-wrap: wrap;
+}
+.card-buttons {
+	display: flex;
+	align-items: center;
+	margin-top: 24px;
+}
+.card-price-bold {
+	font-weight: bold;
+	font-size: 20px;
+	line-height: 32px;
+	margin-left: 32px;
+}
+.rating{
+	margin-right: 26px;
+	color: #FFC107;
+	font-weight: bold;
+	font-size: 18px;
+	line-height: 32px;
+}
+.price, 
+.category {
+	color: #8C8C8C;
+	font-size: 18px;
+	line-height: 32px;
+	text-overflow: ellipsis;
+	white-space: nowrap; 
+    overflow: hidden;
+    /* price-list */
+}
+.ingredients {
+	color: #8C8C8C;
+	font-size: 18px;
+	line-height: 21px;
+}
+.price{
+	margin-right: 10px;
+}
+.price:after {
+	content: "";
+	width: 5px;
+	height: 5px;
+	background: #8C8C8C;
+	display: inline-block;
+	vertical-align: middle;
+	border-radius: 50%;
+	margin-left: 10px;
+}
+.footer{
+	padding: 60px 0;
+}
+.footer-block {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+.footer-link {
+	display: inline-block;
+	color: #595959;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 18px;
+	line-height: 21px;
+	text-decoration: none;
+}
+.footer-link:not(:last-child) {
+	margin-right: 15px;
+}
+.footer-nav {
+	margin-left: 35px;
+	margin-right: auto;
+}
+.social-links {
+	display: flex;
+	align-items: center;
+}
+.social-link:not(:last-child) {
+	margin-right: 21px;
+}
+.modal {
+	position: fixed;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	background: rgba(0, 0, 0, 0.4);
+	display:flex;
+	display: none;
+}
+.is-open {
+	display: flex;
+}
+.modal-dialog {
+	max-width: 780px;
+	width: 95%;
+	
+	background: #FFF;
+	border-radius: 5px;
+	margin: auto;
+	padding: 40px 45px;
+}
+.modal-header{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin-bottom: 45px; 
+}
+.modal-title {
+	font-weight: bold;
+	font-size: 36px;
+	line-height: 42px;
+	color: #000000;
+	margin: 0px;
+}
+.close {
+	font-size: 45px;
+	border: none;
+	background-color: transparent;
+}
+.modal-body{
+	margin-bottom: 52px;
+}
+.food-row {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding-bottom: 8px;
+    border-bottom: 1px solid #D9D9D9;
+}
+.food-name{
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 32px;
+}
+.food-price {
+    margin-left: auto;
+    margin-right: 47px;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 32px;
+}
+.counter-button{
+	display: flex;
+	background: #FFFFFF;
+	border: 1px solid #40A9FF;
+	box-sizing: border-box;
+	border-radius: 2px;
+	align-items: center;
+	justify-content: center;
+	font-weight: normal;
+	font-size: 14px;
+	line-height: 22px;
+	color: #40A9FF;
+}
+.food-counter{
+	display: flex;
+	align-items: center;	
+}
+.counter{
+	font-size: 16px;
+	line-height: 24px;
+	margin-left: 10px;
+	margin-right: 10px;
+
+}
+.modal-footer{
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+.footer-buttons {
+	display: flex;
+	align-items: center;
+}
+.modal-pricetag {
+	background: #262626;
+	border-radius: 5px;
+	color:#FaFaFa;
+	padding: 15px 20px;
+	font-size: 20px;
+	line-height: 23px;
+}
+@media (max-width: 1366px) {
+	.container {
+		max-width: 960px;
+	}
+	.promo {
+		background-position: center right -300px;
+		background-size: 750px;
+	}
+	.category,
+	.price {
+		font-size: 14px;
+
+	}
+}
